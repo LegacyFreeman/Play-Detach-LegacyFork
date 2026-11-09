@@ -43,9 +43,9 @@ jobs:
             exit 1
           fi
 
-          VERSION=$(sed -n 's/^version=\([^ ]*\).*/\1/p' module.prop)
-          VERSION_CODE=$(sed -n "s/^versionCode=//p" module.prop)
-          ID=$(sed -n "s/^id=//p" module.prop)
+          VERSION=$(sed -n 's/^version=\([^ ]*\).*/\1/p' module/module.prop)
+          VERSION_CODE=$(sed -n "s/^versionCode=//p" module/module.prop)
+          ID=$(sed -n "s/^id=//p" module/module.prop)
 
           FILENAME="${ID}-v${VERSION}_(${VERSION_CODE}).zip"
 
