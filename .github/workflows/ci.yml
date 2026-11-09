@@ -38,7 +38,7 @@ jobs:
       - name: Парсинг метаданных module.prop
         id: metadata
         run: |
-          if [ ! -f module.prop ]; then
+          if [ ! -f module/module.prop ]; then
             echo "::error title=Missing module.prop::Файл module.prop не найден в корне репозитория!"
             exit 1
           fi
